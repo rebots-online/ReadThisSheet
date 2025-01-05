@@ -1,0 +1,23 @@
+*.iml
+.gradle
+/local.properties
+/.idea
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+local.properties
+
+# Release signing
+/app/release-key.jks
+keystore.properties
+/app/release
+/app/debug
+
+# Google Services
+/app/google-services.json
+
+# Secure Credentials
+SECURE_CREDENTIALS.md
+**/SECURE_CREDENTIALS.md

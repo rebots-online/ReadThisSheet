@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ReadThisSheet!</string>
+    <string name="key_signature">Key Signature: %1$s</string>
+    <string name="chord_progression">Chord Progression: %1$s</string>
+    <string name="play">Play</string>
+    <string name="stop">Stop</string>
+    <string name="subscribe">Subscribe to Premium</string>
+    <string name="premium_features">Get access to advanced music analysis</string>
+    <string name="sign_in">Sign In</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="camera_permission_required">Camera permission is required for AR features</string>
+</resources>

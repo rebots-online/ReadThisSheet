@@ -1,0 +1,112 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+    id 'kotlin-kapt'
+    id 'com.google.gms.google-services'
+}
+
+android {
+    namespace 'world.robinsai.readthissheet'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "world.robinsai.readthissheet"
+        minSdk 24
+        targetSdk 34
+        versionCode 1
+        versionName "1.0.0"
+        
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    signingConfigs {
+        release {
+            def keystoreProperties = new Properties()
+            def keystorePropertiesFile = rootProject.file('keystore.properties')
+            if (keystorePropertiesFile.exists()) {
+                keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
+                storeFile file(keystoreProperties['storeFile'])
+                storePassword keystoreProperties['storePassword']
+                keyAlias keystoreProperties['keyAlias']
+                keyPassword keystoreProperties['keyPassword']
+            }
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+            
+            buildConfigField "String", "MCP_API_KEY", "\"${findProperty('MCP_API_KEY') ?: ''}\""
+            buildConfigField "String", "MCP_ENDPOINT", "\"${findProperty('MCP_ENDPOINT') ?: 'https://api.modelcontextprotocol.com'}\""
+        }
+        debug {
+            applicationIdSuffix ".debug"
+            debuggable true
+            
+            buildConfigField "String", "MCP_API_KEY", "\"${findProperty('MCP_API_KEY') ?: 'debug_key'}\""
+            buildConfigField "String", "MCP_ENDPOINT", "\"${findProperty('MCP_ENDPOINT') ?: 'https://api-dev.modelcontextprotocol.com'}\""
+        }
+    }
+
+    bundle {
+        language {
+            enableSplit = true
+        }
+        density {
+            enableSplit = true
+        }
+        abi {
+            enableSplit = true
+        }
+    }
+    
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+    
+    kotlinOptions {
+        jvmTarget = '11'
+    }
+    
+    buildFeatures {
+        viewBinding true
+        buildConfig true
+    }
+}
+
+dependencies {
+    implementation 'androidx.core:core-ktx:1.12.0'
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.11.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    
+    // AR Core
+    implementation 'com.google.ar:core:1.40.0'
+    
+    // ML Kit
+    implementation 'com.google.mlkit:text-recognition:16.0.0'
+    
+    // Firebase
+    implementation platform('com.google.firebase:firebase-bom:32.7.0')
+    implementation 'com.google.firebase:firebase-analytics-ktx'
+    implementation 'com.google.firebase:firebase-auth-ktx'
+    
+    // ExoPlayer
+    implementation 'com.google.android.exoplayer:exoplayer:2.19.1'
+    
+    // Billing
+    implementation 'com.android.billingclient:billing-ktx:6.1.0'
+    
+    // MCP
+    implementation 'com.modelcontextprotocol:core:1.0.0'
+    
+    // Testing
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+}
