@@ -1,0 +1,7 @@
+#Sun Jan 05 12:57:28 EST 2025
+base.1=/home/robin/Android/AndroidProjects/ReadThisSheet/app/build/intermediates/dex/release/minifyReleaseWithR8/classes2.dex
+path.1=classes2.dex
+base.0=/home/robin/Android/AndroidProjects/ReadThisSheet/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+renamed.1=classes2.dex
+renamed.0=classes.dex
+path.0=classes.dex

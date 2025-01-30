@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "world.robinsai.readthissheet.app-merged_res-53:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "world.robinsai.readthissheet.app-main-55:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "world.robinsai.readthissheet.app-merged_res-53:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "world.robinsai.readthissheet.app-main-55:/drawable/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "world.robinsai.readthissheet.app-merged_res-53:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "world.robinsai.readthissheet.app-main-55:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "world.robinsai.readthissheet.app-merged_res-53:/layout_activity_main.xml.flat",
+        "source": "world.robinsai.readthissheet.app-main-55:/layout/activity_main.xml"
+    },
+    {
+        "merged": "world.robinsai.readthissheet.app-merged_res-53:/layout_activity_ar_sheet_music.xml.flat",
+        "source": "world.robinsai.readthissheet.app-main-55:/layout/activity_ar_sheet_music.xml"
+    },
+    {
+        "merged": "world.robinsai.readthissheet.app-merged_res-53:/drawable_ic_play.xml.flat",
+        "source": "world.robinsai.readthissheet.app-main-55:/drawable/ic_play.xml"
+    }
+]

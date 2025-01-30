@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "world.robinsai.readthissheet.app-mergeReleaseResources-52:/layout/activity_ar_sheet_music.xml",
+        "source": "world.robinsai.readthissheet.app-main-54:/layout/activity_ar_sheet_music.xml"
+    },
+    {
+        "merged": "world.robinsai.readthissheet.app-mergeReleaseResources-52:/layout/activity_main.xml",
+        "source": "world.robinsai.readthissheet.app-main-54:/layout/activity_main.xml"
+    }
+]

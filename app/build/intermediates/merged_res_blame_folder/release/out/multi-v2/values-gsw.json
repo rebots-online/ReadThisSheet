@@ -1,0 +1,26 @@
+{
+    "logs": [
+        {
+            "outputFile": "world.robinsai.readthissheet.app-mergeReleaseResources-51:/values-gsw/values-gsw.xml",
+            "map": [
+                {
+                    "source": "/home/robin/.gradle/caches/8.9/transforms/e3f232464ab47090b95dfa236a4d10e7/transformed/jetified-core-1.40.0/res/values-gsw/values.xml",
+                    "from": {
+                        "startLines": "4,5,6,7,8",
+                        "startColumns": "0,0,0,0,0",
+                        "startOffsets": "191,241,290,424,561",
+                        "endColumns": "49,48,133,136,90",
+                        "endOffsets": "240,289,423,560,651"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "55,109,162,300,441",
+                        "endColumns": "53,52,137,140,94",
+                        "endOffsets": "104,157,295,436,531"
+                    }
+                }
+            ]
+        }
+    ]
+}
